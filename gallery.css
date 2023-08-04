@@ -1,0 +1,68 @@
+/*? CSS of Animated Images*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #242424;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    width: 950px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2px;
+    list-style: none;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 5px black;
+    cursor: pointer;
+}
+
+li {
+    transition: 0.4s ease-in-out;
+    border-left: 1px solid white;
+    position: relative;
+    width: 190px;
+    height: 450px;
+}
+
+span {
+    display:block;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    color:white;
+    white-space:nowrap;
+    padding:15px;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #121212, #e6dada00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #121212, #e6dada00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+img {
+    width: 800px;
+    height: 450px;
+    transition: 0.3s ease-in-out;
+}
+
+ul:hover li {
+    width: 50px;    
+}
+
+ul li:hover {
+    width: 750px;
+}
+
+/* Media Query  */
